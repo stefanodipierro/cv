@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stefano Di Pierro - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Stefano Di Pierro
+          <div class="contact_info">
+          stefanodipierro@live.com
+        </div>
+        <div style="clear:both;"></div>
+        
+        <div class="contact_info">
+          +39 3485153785
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Stefano Di Pierro! 
+          </h1>
+          <p>
+            I might not have extensive corporate experience, but my journey in the world of programming is unique and rewarding. 
+            While my professional background isn't vast, I've dedicated time to personal projects that have honed my skills and passion for development. 
+            One of the significant undertakings I'm proud of is building APIs for Midjourney using Flask. 
+            My inclination towards Flask demonstrates my affinity for micro web frameworks, and I'm always eager to expand my knowledge and dive deeper into the realms of technology.
+        </p>
+        
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="https://simpleicons.org/icons/html5.svg"/>
+          <h6>HTML</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="https://simpleicons.org/icons/javascript.svg"/>
+          <h6>JavaScript</h6>
+          <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="https://simpleicons.org/icons/css3.svg"/>
+          <h6>CSS</h6>
+          <p>3 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="https://simpleicons.org/icons/flask.svg"/>
+          <h6>Flask</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="https://simpleicons.org/icons/python.svg"/>
+          <h6>Python</h6>
+          <p>3 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="https://simpleicons.org/icons/mysql.svg"/>
+          <h6>SQL</h6>
+          <p>2 years experience</p>
+        </div>
+
+        <!-- Add other skills similarly -->
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          
+          <!-- Midjourney API Project -->
+          <div class="project-card">
+            <h3>Midjourney API</h3>
+            <ul>
+              <li>Developed an API for Midjourney using specific technologies and tools.</li>
+            </ul>
+          </div>
+          <hr>
+          
+          <!-- Flask Blog Generator Project -->
+          <div class="project-card">
+            <h3>Flask Blog Generator</h3>
+            <ul>
+              <li>Python-based application leveraging OpenAI's GPT-3 model for dynamic blog generation.</li>
+              <li>Integration with Discord's API via the Midjourney bot for image management.</li>
+              <li>Features like user registration, login, dynamic content generation, image downloading, and more.</li>
+            </ul>
+          </div>
+          <hr>
+          
+          <!-- Sentiment Analyzer Project -->
+          <div class="project-card">
+            <h3>Sentiment Analyzer</h3>
+            <ul>
+              <li>Developed a sentiment analysis tool leveraging the VADER (Valence Aware Dictionary and sEntiment Reasoner) lexicon and rule-based sentiment analysis tool.</li>
+              <li>Implemented functionalities to process textual data and infer sentiment scores.</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        
+        <!-- Recommendation from Mike -->
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Stefano's ability to juggle multiple projects was unlike any I’ve seen before. He played a pivotal role in the success of our latest web project. A dedicated professional!
+          <span>&#8221;</span>
+        </div>
+
+        <!-- Recommendation from Lisa -->
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the pleasure of working with Stefano at TP Benelux, where he led our development team. His skills, combined with his passion for web design, make him an invaluable asset.
+          <span>&#8221;</span>
+        </div>
+        
+        <!-- Recommendation from David -->
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Stefano consistently demonstrated a strong work ethic and a dedication to success. His efforts have produced high-quality results time and time again. Highly recommended!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <i class="fas fa-check"></i>
+      <h3>Thanks for leaving a reccomendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
